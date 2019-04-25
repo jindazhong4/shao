@@ -1377,6 +1377,10 @@ tbody tr {
     width: 0.18rem;
 }
 
+.centerTable{
+    margin-top: 0.1rem;
+}
+
 .table3 {
     font-size: 0.16rem;
     border: 1px solid #0e94ea;
