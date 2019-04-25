@@ -166,10 +166,6 @@
     var temp=JSON.parse(mJson.responseText);
     var tradingList=temp.data.tradingList;
     var i=0;
-    console.log(tradingList);
-
-    console.log(tradingList[i].name);
-    debugger;
     var interval = setInterval(function() {
         var tr=$("<tr>");
         var tdName = $("<td>");
