@@ -1024,11 +1024,17 @@ tbody tr {
     line-height: 0.42rem;
     margin-left: 0.4rem;
 }
-
-.typeList>h1{
+.typeList{
+    font-size: 0.2rem;
+    box-sizing: border-box;
+}
+.typeList>div{
     padding: 0.2rem 0 0 0.4rem;
 }
-
+.typeList>div>div{
+    display: inline-block;
+    width:40%;
+}
 .title-box>p>span {
     cursor: pointer;
     color: rgba(255, 255, 255, .6);
