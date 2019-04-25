@@ -26,7 +26,7 @@
                     <h6>业务品种</h6>
                 </div>
                 <div class="chart-box pie-chart" style="">
-				<h1>分期乐</h1>
+				    <h1>分期乐</h1>
 					<h1>桔子金融</h1>
 					<h1>即科医美分期</h1>
 					<h1>即科现金分期</h1>
@@ -34,7 +34,6 @@
 					<h1>维信金科</h1>
 					<h1>拍拍贷</h1>
                     <div id="pie_fanzui" style="width: 100%; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;" _echarts_instance_="ec_1555657565049"><div style="position: relative; overflow: hidden; width: 323px; height: 219px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="484" height="328" style="position: absolute; left: 0px; top: 0px; width: 323px; height: 219px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
-                    
                 </div>
             </div>
             <div class="left-bottom">
@@ -167,7 +166,11 @@
     var temp=JSON.parse(mJson.responseText);
     var tradingList=temp.data.tradingList;
     var i=0;
-    setInterval(function() {
+    console.log(tradingList);
+
+    console.log(tradingList[i].name);
+    debugger;
+    var interval = setInterval(function() {
         var tr=$("<tr>");
         var tdName = $("<td>");
         var tbType = $("<td>");
@@ -183,9 +186,9 @@
         tr.append(tbDate);
         $('.tList').append(tr);
         $('.tList').scrollTop($('.tList')[0].scrollHeight);
-        i++
-        if (i > tradingList.length) {
-            return;
+        i++;
+        if (i === tradingList.length) {
+            window.clearInterval(interval);
         }
     }, 1000);
 
