@@ -280,9 +280,9 @@ tbody tr {
     line-height: 0.8rem;
     text-align: center;
     background: url(../images/title_bg01.png) center center no-repeat;
-    font-size: 0.2rem;
+    font-size: 0.3rem;
     color: #0e94ea;
-    background-size: 1.8rem 0.25rem;
+    background-size: 2.7rem 0.355rem;
     font-weight: 900;
 }
 
@@ -1023,6 +1023,10 @@ tbody tr {
     height: 0.42rem;
     line-height: 0.42rem;
     margin-left: 0.4rem;
+}
+
+.typeList>h1{
+    padding: 0.2rem 0 0 0.4rem;
 }
 
 .title-box>p>span {
