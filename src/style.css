@@ -1016,6 +1016,14 @@ tbody tr {
     position: relative;
 }
 
+.totalInfo{
+    margin-top: 0.2rem;
+    text-align: center;
+    font-size: 0.2rem;
+}
+.totalInfo>div{
+    display: inline;
+}
 .title-box>h6,
 .title-box>p {
     font-size: 0.2rem;
