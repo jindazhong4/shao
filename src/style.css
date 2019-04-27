@@ -1033,16 +1033,28 @@ tbody tr {
     margin-left: 0.4rem;
 }
 .typeList{
-    font-size: 0.2rem;
+    /* font-size: 0.2rem; */
     box-sizing: border-box;
 }
-.typeList>div{
-    padding: 0.2rem 0 0 0.4rem;
+.typeList span{
+    font-size: 0.2rem;
+}
+.typeList img{
+    width:0.2rem;
+    height:0.2rem;
+    margin-right: 0.1rem;
 }
 .typeList>div>div{
-    display: inline-block;
     width:40%;
+    height: 0.3rem;
+    display:inline-flex!important;
+    align-items: center;
 }
+.typeList>div{
+    height: 0.4rem;
+    padding-left: 0.5rem;
+}
+
 .title-box>p>span {
     cursor: pointer;
     color: rgba(255, 255, 255, .6);
@@ -1390,8 +1402,14 @@ tbody tr {
 .add-btn>img {
     width: 0.18rem;
 }
-
+.centerTable td{
+    width:50%!important;
+}
+#tList{
+    height: 3rem!important; 
+}
 .centerTable{
+    height: 3rem;
     margin-top: 1.7rem!important;
 }
 
